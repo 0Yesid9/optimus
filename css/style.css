@@ -4,9 +4,10 @@ body {
 .container {
     display: grid;
     background-color: rgb(231, 223, 223);
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 130px 1fr;
     grid-template-areas: "menu-top menu-top"
-                         "menu-left all";
+                         "menu-left all"
+                         "position position";
 }
 .menu-top {
     grid-area: menu-top;
@@ -64,7 +65,7 @@ body {
     margin-top: 10px;
     background: #d6d6d6;
     grid-template-columns: 100px;
-    grid-template-rows: 325px 311px 226px 210px;
+    grid-template-rows: 352px 350px 380px 210px;
 }
 .menu-left .item1{
     display: flex;
@@ -112,11 +113,27 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -40px;
-    height: 42pxpx;
-    max-width: 400px;
-}
+    height: 42px;
 
+}
+.position {
+    display: inline;
+    grid-area: position;
+}
+.position .one{
+
+    padding: 10px;
+    margin: 0;
+}
+#footer {
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372 );
+}
+#footer a {
+    color: white;
+}
+#footer p {
+    color: white;
+}
 
 
 
